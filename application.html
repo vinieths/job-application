@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply - Job Application System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="register.html">Register</a>
+        <a href="login.html">Login</a>
+        <a href="application.html">Apply</a>
+    </nav>
+    <div class="application-container">
+        <h1>Employment Form</h1>
+        <form id="job-application-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="experience">Years of Experience:</label>
+            <input type="number" id="experience" name="experience" min="0" required>
+            
+            <label for="education">Education Level:</label>
+            <select id="education" name="education" required>
+                <option value="">Select your education level</option>
+                <option value="High School">High School</option>
+                <option value="Associate Degree">Associate Degree</option>
+                <option value="Bachelor's Degree">Bachelor's Degree</option>
+                <option value="Master's Degree">Master's Degree</option>
+                <option value="Doctorate">Doctorate</option>
+            </select>
+            
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" name="resume" required>
+            
+            <label for="cover-letter">Cover Letter:</label>
+            <textarea id="cover-letter" name="cover-letter" rows="4" required></textarea>
+            
+            <button type="submit">Submit Application</button>
+        </form>
+        <p id="confirmation-message"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
